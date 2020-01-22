@@ -31,7 +31,11 @@ header h1 {
 }
 
 /*nav*/
-nav {
+.desktop {
+	display: none;
+}
+
+.mobile {
     text-align: right;
     min-height: 70px;
     line-height: 70px;
@@ -144,7 +148,27 @@ h3 {
 
 /*Media Queries*/
 @media screen and (min-width: 768px) {
-    header {
+	.mobile {
+		display: none;
+	}
+
+	.desktop {
+		display: contents;
+		display: flex;
+		height: 70px;
+		background-color: #404040;
+	}
+
+	desktop a {
+		text-decoration: none;
+		flex: 1;
+		margin: auto;
+		text-align: center;
+		color: #feca07;
+		text-transform: uppercase;
+	}
+
+	header {
     	display: flex;
     }
 
@@ -156,6 +180,15 @@ h3 {
     	background-color: #feca07; /*yellow*/
     }
 
+	aside {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#about {
+		flex-grow: 3;
+	}
+	
     .colonne_une, aside {
     	flex: 0.8;
     	margin: 0 40px 0 0;
