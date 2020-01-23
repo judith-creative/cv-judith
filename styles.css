@@ -1,7 +1,7 @@
 body {
 	font-family: 'Raleway', 'Times New Roman', sans-serif;
 	width: 100%;
-	background-color: #ffffff; /*white*/
+	background-color: #ffffff;
 	margin: 0;
 }
 
@@ -27,7 +27,7 @@ header h1 {
 
 #prenom {
 	font-weight: bold;
-	color: #feca07; /*yellow*/
+	color: #feca07;
 }
 
 /*nav*/
@@ -51,7 +51,7 @@ header h1 {
 .menu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #feca07; /*yellow*/
+    color: #feca07;
     line-height: 70px;
     display: block;
     margin: 0;
@@ -74,22 +74,22 @@ label {
 
 #toggle:checked + .menu {
     display: block;
-    background: #404040; /*grey*/
+    background: #404040;
 }
 
 .menu a:active {
-    background-color: #feca07; /*yellow*/
+    background-color: #feca07;
 }
 
 /*aside*/
 aside {
-	background-color: #feca07; /*yellow*/
-	color: #404040; /*grey*/
+	background-color: #feca07;
+	color: #404040;
 }
 
 aside h2 {
-	background-color: #404040; /*grey*/
-	color: #feca07; /*yellow*/
+	background-color: #404040;
+	color: #feca07;
 	text-align: center;
 }
 
@@ -109,7 +109,7 @@ aside p {
 #hobbies i {
 	font-size: 1.5em;
 	margin-right: 5px;
-	border: 2px solid #404040; /*grey*/
+	border: 2px solid #404040;
 	border-radius: 35px;
 	padding: 15px;
 }
@@ -120,11 +120,11 @@ main p, main h3 {
 }
 
 main h2 {
-	border-bottom: solid #feca07 2px; /*yellow*/
+	border-bottom: solid #feca07 2px;
 }
 
 h2 i {
-	color: #feca07; /*yellow*/
+	color: #feca07;
 	padding: 0 15px;
 }
 
@@ -134,7 +134,7 @@ h2 i {
 
 	.date i {
 		padding: 0 3px;
-		color: #feca07; /*yellow*/
+		color: #feca07;
 	}
 
 .where {
@@ -144,6 +144,10 @@ h2 i {
 h3 {
 	text-transform: uppercase;
 	margin: 16px 0;
+}
+
+footer {
+	text-align: center;
 }
 
 /*Media Queries*/
@@ -159,7 +163,7 @@ h3 {
 		background-color: #404040;
 	}
 
-	desktop a {
+	.desktop a {
 		text-decoration: none;
 		flex: 1;
 		margin: auto;
@@ -177,7 +181,7 @@ h3 {
     }
 
     header .colonne_une {
-    	background-color: #feca07; /*yellow*/
+    	background-color: #feca07;
     }
 
 	aside {
