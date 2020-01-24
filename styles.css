@@ -14,8 +14,8 @@ h1 + h2 {
 	font-weight: normal;
 }
 
-/*background-color: #191f21 dark grey in stead of #404040 grey
-color: #2ca260 green in stead of #feca07 yellow*/
+/*background-color: #cfd8dc dark grey in stead of #404040 grey
+color: #6200ea green in stead of #feca07 yellow*/
 
 /*header*/
 header {
@@ -33,7 +33,7 @@ header h1 {
 
 #prenom {
 	font-weight: bold;
-	color: #2ca260;
+	color: #6200ea;
 }
 
 /*nav*/
@@ -57,7 +57,7 @@ header h1 {
 .menu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #2ca260;
+    color: #6200ea;
     line-height: 70px;
     display: block;
     margin: 0;
@@ -80,36 +80,40 @@ label {
 
 #toggle:checked + .menu {
     display: block;
-    background: #191f21;
+    background: #cfd8dc;
 }
 
 .menu a:active {
-    background-color: #191f21;
+    background-color: #cfd8dc;
 }
 
 /*aside*/
 aside {
-	background-color: #2ca260;
+	background-color: #6200ea;
 }
 
 aside h2 {
-	background-color: #191f21;
-	color: #2ca260;
+	background-color: #cfd8dc;
+	color: #6200ea;
 	text-align: center;
 }
 
 aside p {
 	padding: 0 15px;
+	color: #cfd8dc;
 }
 
 #contact p a {
 	text-decoration: none;
-	color: #191f21;
+	color: #cfd8dc;
 }
 
 #about p {
 	text-align: justify;
-	color: #191f21;
+}
+
+#about p a {
+	color: #cfd8dc;
 }
 
 #hobbies {
@@ -120,10 +124,10 @@ aside p {
 #hobbies i {
 	font-size: 1.5em;
 	margin-right: 5px;
-	border: 2px solid #191f21;
+	border: 2px solid #cfd8dc;
 	border-radius: 35px;
 	padding: 15px;
-	color: #191f21;
+	color: #cfd8dc;
 }
 
 /*main text*/
@@ -139,11 +143,11 @@ main p, main h3 {
 }
 
 main h2 {
-	border-bottom: solid #2ca260 2px;
+	border-bottom: solid #6200ea 2px;
 }
 
 h2 i {
-	color: #2ca260;
+	color: #6200ea;
 	padding: 0 15px;
 }
 
@@ -153,7 +157,7 @@ h2 i {
 
 	.date i {
 		padding: 0 3px;
-		color: #2ca260;
+		color: #6200ea;
 	}
 
 .where {
@@ -173,7 +177,7 @@ h3 {
 footer {
 	text-align: center;
 	margin: 20px 0;
-	color: #2ca260;
+	color: #6200ea;
 }
 
 /*Media Queries*/
@@ -186,7 +190,7 @@ footer {
 		display: contents;
 		display: flex;
 		height: 70px;
-		background-color: #191f21;
+		background-color: #cfd8dc;
 	}
 
 	.desktop a {
@@ -194,7 +198,7 @@ footer {
 		flex: 1;
 		margin: auto;
 		text-align: center;
-		color: #2ca260;
+		color: #6200ea;
 		text-transform: uppercase;
 	}
 
@@ -207,7 +211,7 @@ footer {
     }
 
     header .colonne_une {
-    	background-color: #2ca260;
+    	background-color: #6200ea;
     }
 
 	aside {
