@@ -9,8 +9,13 @@ h2 {
 	text-transform: uppercase;
 }
 
-/*#37474F dark blue background contact, apropos, loisirs
-#2E7D32 dark green background H2 aside*/
+h1 + h2 {
+	text-transform: initial;
+	font-weight: normal;
+}
+
+/*background-color: #191f21 dark grey in stead of #404040 grey
+color: #2ca260 green in stead of #feca07 yellow*/
 
 /*header*/
 header {
@@ -22,12 +27,13 @@ h1 em {
 }
 
 header h1 {
-	margin: 21px 0 0 0;
+	margin: 40px 0 0 0;
+	font-size: 3em;
 }
 
 #prenom {
 	font-weight: bold;
-	color: #feca07;
+	color: #2ca260;
 }
 
 /*nav*/
@@ -51,7 +57,7 @@ header h1 {
 .menu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #feca07;
+    color: #2ca260;
     line-height: 70px;
     display: block;
     margin: 0;
@@ -74,22 +80,21 @@ label {
 
 #toggle:checked + .menu {
     display: block;
-    background: #404040;
+    background: #191f21;
 }
 
 .menu a:active {
-    background-color: #feca07;
+    background-color: #191f21;
 }
 
 /*aside*/
 aside {
-	background-color: #feca07;
-	color: #404040;
+	background-color: #2ca260;
 }
 
 aside h2 {
-	background-color: #404040;
-	color: #feca07;
+	background-color: #191f21;
+	color: #2ca260;
 	text-align: center;
 }
 
@@ -97,8 +102,14 @@ aside p {
 	padding: 0 15px;
 }
 
+#contact p a {
+	text-decoration: none;
+	color: #191f21;
+}
+
 #about p {
 	text-align: justify;
+	color: #191f21;
 }
 
 #hobbies {
@@ -109,22 +120,30 @@ aside p {
 #hobbies i {
 	font-size: 1.5em;
 	margin-right: 5px;
-	border: 2px solid #404040;
+	border: 2px solid #191f21;
 	border-radius: 35px;
 	padding: 15px;
+	color: #191f21;
 }
 
 /*main text*/
+.parent_colonnes {
+	border-radius: 7px;
+	box-shadow: 0 0 10px 0 rgba(199,199,199,1);
+	margin: 15px;
+	padding: 10px 0;
+}
+
 main p, main h3 {
 	padding: 0 15px;
 }
 
 main h2 {
-	border-bottom: solid #feca07 2px;
+	border-bottom: solid #2ca260 2px;
 }
 
 h2 i {
-	color: #feca07;
+	color: #2ca260;
 	padding: 0 15px;
 }
 
@@ -134,7 +153,7 @@ h2 i {
 
 	.date i {
 		padding: 0 3px;
-		color: #feca07;
+		color: #2ca260;
 	}
 
 .where {
@@ -146,8 +165,15 @@ h3 {
 	margin: 16px 0;
 }
 
+.colonne_une_references p, .colonne_deux_references p{
+	margin: 6px 0 6px 0;
+}
+
+/*footer*/
 footer {
 	text-align: center;
+	margin: 20px 0;
+	color: #2ca260;
 }
 
 /*Media Queries*/
@@ -160,7 +186,7 @@ footer {
 		display: contents;
 		display: flex;
 		height: 70px;
-		background-color: #404040;
+		background-color: #191f21;
 	}
 
 	.desktop a {
@@ -168,7 +194,7 @@ footer {
 		flex: 1;
 		margin: auto;
 		text-align: center;
-		color: #feca07;
+		color: #2ca260;
 		text-transform: uppercase;
 	}
 
@@ -181,7 +207,7 @@ footer {
     }
 
     header .colonne_une {
-    	background-color: #feca07;
+    	background-color: #2ca260;
     }
 
 	aside {
@@ -198,7 +224,12 @@ footer {
     	margin: 0 40px 0 0;
     }
 
-    .colonne_deux, main {
+	.parent_colonnes {
+		border: none;
+		box-shadow: none;
+	}
+
+	.colonne_deux, main {
     	flex: 2;
     }
 
