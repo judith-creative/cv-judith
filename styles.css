@@ -98,9 +98,18 @@ aside h2 {
 	text-align: center;
 }
 
-aside p {
+aside p, aside h3 {
 	padding: 0 15px;
 	color: #cfd8dc;
+}
+
+aside h3 {
+	text-transform: initial;
+	margin-bottom: 0;
+}
+
+aside h3 + p {
+	margin-top: 0;
 }
 
 #contact p a {
@@ -110,6 +119,7 @@ aside p {
 
 #about p {
 	text-align: justify;
+	line-height: 23px;
 }
 
 #about p a {
@@ -138,17 +148,22 @@ aside p {
 	padding: 10px 0;
 }
 
+main h3 + p {
+	color: #6200ea;
+}
+
 main p, main h3 {
 	padding: 0 15px;
 }
 
 main h2 {
 	border-bottom: solid #6200ea 2px;
+	margin: 20px
 }
 
 h2 i {
 	color: #6200ea;
-	padding: 0 15px;
+	padding-right: 15px;
 }
 
 .date {
@@ -156,12 +171,12 @@ h2 i {
 }
 
 	.date i {
-		padding: 0 3px;
+		padding-right: 16px;
 		color: #6200ea;
 	}
 
 .where {
-	margin: 0 0 16px 22px;
+	margin: 0 0 16px 32px;
 }
 
 h3 {
@@ -176,8 +191,9 @@ h3 {
 /*footer*/
 footer {
 	text-align: center;
-	margin: 20px 0;
+	padding: 20px 0;
 	color: #6200ea;
+	background-color: #cfd8dc;
 }
 
 /*Media Queries*/
@@ -200,6 +216,12 @@ footer {
 		text-align: center;
 		color: #6200ea;
 		text-transform: uppercase;
+	}
+
+	.desktop a:hover {
+		color: #0a00b6;
+		font-weight: bold;
+		font-size: 1rem;
 	}
 
 	header {
