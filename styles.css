@@ -140,6 +140,14 @@ aside h3 + p {
 	color: #cfd8dc;
 }
 
+.loisirs {
+	display: flex;
+}
+
+.loisirs p {
+	flex: 1;
+}
+
 /*main text*/
 .parent_colonnes {
 	border-radius: 7px;
